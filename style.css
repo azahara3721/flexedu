@@ -1,0 +1,76 @@
+
+
+
+body {
+    margin: 0;
+
+}
+
+
+.container{
+    display: flex;
+    width: 600px;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+   /* flex-direction: column-reverse;*/
+   
+
+}
+
+.container section {
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.caja1 {
+
+    background-color: rgb(0, 2, 16);
+    
+}
+
+.caja2 {
+
+    background-color: rgb(10, 21, 105);
+    
+}
+.caja3 {
+
+    background-color: rgb(35, 47, 133);
+    
+}
+.caja4 {
+
+    background-color: rgb(97, 116, 194);
+    
+}
+.caja5 {
+
+    background-color: rgb(171, 179, 237);
+    
+}
+
+.caja1, .caja2, .caja3, .caja4, .caja5 {
+    width: 100%;
+
+}
+
+
+@media (min-width: 600px) {
+    .caja2, .caja3, .caja4, .caja5 {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .caja1 {
+        width: 40px;
+    }
+    .caja2 {
+        width: 60px;
+    }
+
+    .caja3, .caja4, .caja5 {
+        width: 33.33%;
+    }
+}
